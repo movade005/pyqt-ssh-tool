@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1280</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1280</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Aiotmin</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTreeWidget" name="deviceList">
+    <property name="geometry">
+     <rect>
+      <x>1</x>
+      <y>20</y>
+      <width>298</width>
+      <height>648</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>298</width>
+      <height>648</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>298</width>
+      <height>648</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 3px;  border: 1px groove gray;</string>
+    </property>
+    <column>
+     <property name="text">
+      <string>状态</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>设备</string>
+     </property>
+    </column>
+    <item>
+     <property name="text">
+      <string>所有设备</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>在线</string>
+      </property>
+      <property name="foreground">
+       <brush brushstyle="NoBrush">
+        <color alpha="255">
+         <red>85</red>
+         <green>170</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </property>
+      <property name="text">
+       <string>设备1</string>
+      </property>
+     </item>
+    </item>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>1</x>
+      <y>0</y>
+      <width>299</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLineEdit" name="lineEdit">
+       <property name="minimumSize">
+        <size>
+         <width>260</width>
+         <height>18</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>260</width>
+         <height>18</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius: 3px;  border: 1px groove gray;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="search">
+       <property name="minimumSize">
+        <size>
+         <width>30</width>
+         <height>18</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>30</width>
+         <height>18</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(88, 88, 88);
+color: rgb(255,255,255);  
+border-radius: 9px;  border: 0px groove gray;
+font: 7pt &quot;AcadEref&quot;;
+border-style: outset;</string>
+       </property>
+       <property name="text">
+        <string>查询</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1280</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>1280</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1280</width>
+     <height>30</height>
+    </size>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="action"/>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="minimumSize">
+    <size>
+     <width>1280</width>
+     <height>20</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1280</width>
+     <height>20</height>
+    </size>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>BottomToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <action name="action">
+   <property name="text">
+    <string>新建</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
